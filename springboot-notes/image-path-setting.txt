@@ -1,0 +1,8 @@
+
+
+    1 ..          File saveFile=     new ClassPathResource("static/image").getFile();
+	
+                 Path path=	Paths.get(saveFile.getAbsolutePath()+File.separator+file.getOriginalFilename());
+	
+	  
+	         Files.copy(file.getInputStream(),path , StandardCopyOption.REPLACE_EXISTING);

@@ -1,0 +1,79 @@
+
+1.   you can use the server side validation in springbboot thymeleaf to validate the user.
+
+
+2.  		<dependency>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-starter-validation</artifactId>
+               </dependency>
+
+
+
+
+3 . after putting this dependecy all validation works perfectly.
+
+
+4. we have to put the @valid annoation before the @modelattribute in the controler where we are going to process the form .
+
+5.  after the @modelattribute we have to use the BindingResult to set the logic on process data . it only works after the user data.
+
+6. in the view page we can set view to validation the user like this........   👇👇👇👇👇👇👇👇
+
+
+                        👇👇
+
+
+<div class="form-group">
+    <label class="control-label col-sm-2" for="name_field">Name:</label>
+    <div class="col-sm-10">
+    
+      <input type="text" 
+      class="form-control is-invalid" 
+      id="name_field" 
+      name="name" 
+      th:classappend="${#fields.hasErrors('name') ? 'is-invalid':'' }"
+      
+      />
+      
+      <div class="invalid-feedback" th:each="e:${#fields.errors('name')}" th:text="${e}"> </div>
+      
+      
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

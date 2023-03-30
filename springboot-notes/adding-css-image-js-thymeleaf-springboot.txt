@@ -1,0 +1,6 @@
+
+1. to use the css in thymeleaf th:href="@{/css/mystyle.css}" tag to navigate to particular folder , location,file in thymeleaf.
+
+	<link rel="stylesheet" th:href="@{/css/mystyle.css}">
+
+2. to use the javascript in thymeleaf we have to us the  <script src="" th:src="@{js/myjs.js}"></script>.

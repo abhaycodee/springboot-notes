@@ -1,0 +1,11 @@
+
+1. spring security has the "UserDeatil" interface which has lot of method which is used for the user authorisation
+
+2. boolean isEnabled();   	boolean isCredentialsNonExpired();  boolean isAccountNonLocked();    	boolean isAccountNonExpired();
+
+
+   String getUsername();     	String getPassword();
+
+
+
+

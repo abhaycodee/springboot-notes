@@ -1,0 +1,25 @@
+
+
+1.  it is the nested custom type object insertion inside any custom class in creating the rest api.
+
+2.  json formate of data is given below .
+
+
+
+
+
+
+
+
+             {
+
+   "id": 1098,
+        "title": "javascript full reference",
+        "author": {
+
+"address":"saharanpur",
+"language": "hindi",
+"authorid": 12
+
+        }
+    }

@@ -1,0 +1,4 @@
+
+1. == check only the value of variable not type.
+
+2. === check the value and type also .

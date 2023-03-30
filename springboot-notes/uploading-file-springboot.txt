@@ -1,0 +1,22 @@
+                                             (file uploading using the static path)
+
+   
+1. if the client wants to save the data (file,image , picture,textfile) or in other word if wants to upload the file then he upload(save) the file    on server.
+
+2. to enable the file uploading on server we have to use the =  spring.servlet.multipart.enabled=true in properies file.
+
+
+
+
+step 1: firstly we have to create the controller to handle the file.
+
+step2:  by using @requestparam we can take the data from the client  by providing the name of the file in its argument.
+
+step3: then we have to declare the variable of the multipart type which store all information about the file received.
+
+step3.1: we can call the diffrenet function on the variable which store data of the file received.
+
+step4: then we can call the fileuploder function of the uploader class which you have created in the helper package to upload the files.
+
+
+step5: if the all thigs goes well then it wil save the file successfully.

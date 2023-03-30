@@ -1,0 +1,15 @@
+1. we can iterate the predefined object , variable, list,collection in thymeleaf.
+
+2. there are two methods of list printing in thymeleaf you can simply print the value of list variable = <h4 th:text="${names}"></h4>
+
+    or we can traverse the data incoming from controller by the help of for:each loop of thymeleaf as = 
+	
+        <li th:each="n:${names}">
+	<span th:text="${n}" style="color:red"></span>
+	</li>
+	
+3. status variable is used to find the status of the variable. like this= <span th:style="${status.odd} ? 'font-weight:bold;color:red'" 
+
+4. we can use if-else in thymeleaf = <h3 th:if="${gender}=='female'">female</h3>
+                                     <h3 th:unless="${gender}=='female'">male</h3>
+	

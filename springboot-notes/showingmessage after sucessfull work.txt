@@ -1,0 +1,28 @@
+   
+
+    1. in thymeleaf we can shoe the error or success message like that in thymeleaf  .
+
+
+        <div  th:if="${session.message}" class="container">
+
+        <div th:classappend="${'alert-'+session.message.type}"  role="alert">
+        <span class="ty" th:text="${session.message.content}"></span>
+        </div>
+
+       <th:block th:text="${#session.removeAttribute('message')}"></th:block>
+
+        </div>
+
+
+
+     2.    HttpSession session  is used to dispaly the error or success message 
+     
+
+      3. we can setattribute like this for the dynamic display of the message    =	                                                                                                session.setAttribute("message", new Message("your contact added succesfully....", "success")) ;
+
+
+
+      4. new Message is the object from the helper class use for the dispaly of the message.
+
+
+         

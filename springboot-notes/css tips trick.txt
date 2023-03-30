@@ -1,0 +1,9 @@
+1 . if you wants to move the background image in x and y position you can use  background-position: x y;
+
+2. background-repeat: no-repeat;
+
+
+3. outline buuuton are hover automativcaly when you cursor on them   <button type="button" class="btn btn-outline-success">Success</button>
+
+
+4. source unsplash            https://unsplash.com/s/photos/random

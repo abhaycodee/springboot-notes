@@ -1,0 +1,63 @@
+
+
+1. @ requestparam annoataion use for the accepting the data from the view to controller  @RequestParam("profileImage") MultipartFile file,
+
+     it stores the data by creating the variable of multipart type file .
+
+
+2. the full working of the @requestparam is like that  ......... 👇👇👇👇👇👇
+
+
+         @RequestMapping(method = RequestMethod.POST,value="process-contact")
+	public String processuserform(@ModelAttribute Contact contact, 
+			                      @RequestParam("profileImage") MultipartFile file, 
+			                      Principal principal) {
+		
+		
+	try {
+		
+		String name=	principal.getName();
+		
+	     User user=this.userRepository.getUserByUserName(name);
+	     contact.setUser(user);
+	     
+	     // processing the file
+	     
+	     if(file.isEmpty()) {
+	    	 
+	    	 System.out.println("file is empty");
+	     }
+	     
+	     else {
+	    	 
+	    	 contact.setImage(file.getOriginalFilename());
+	    	 
+	    	 // finding the path of folder in which we wants to store the file
+	    	 
+	    	 
+	         File saveFile=     new ClassPathResource("static/image").getFile();
+	
+                 Path path=	Paths.get(saveFile.getAbsolutePath()+File.separator+file.getOriginalFilename());
+	
+	
+	       Files.copy(file.getInputStream(),path , StandardCopyOption.REPLACE_EXISTING);
+	    	 
+	    	System.out.println("image is uploaded sucessfuly"); 
+	     }
+	     user.getContacts().add(contact);
+	     this.userRepository.save(user);
+
+		 System.out.println("DATA="+contact);
+	     System.out.println("added to database successfully");
+		
+		
+	} catch (Exception e) {
+	
+		System.out.println("ERROR "+e);
+	
+		
+	}
+		return "normal/about";
+	}
+	
+	

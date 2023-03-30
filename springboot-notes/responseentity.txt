@@ -1,0 +1,20 @@
+1.    Response entity is used to add extra functionality to our code for more information about the data, or add the http status during the  
+         manipulation of the data.
+
+2.    You can set the status of the data  in form of the code as 200,404,500 to see the satus of the data.
+
+3.    "ResponseEntity<>" is used as a return type of handler method to set or check the status of the code .
+
+
+4.    ex . like if you have the handler method in you controller for  the get all book from the list of the book, there are two condition there is        all books present or not all book present or miss one of them then you can set the status of the data by usinf the if-else condition 
+
+
+5.   ResponseEntity.status(HttpStatus.NO_CONTENT).build() this method is call when you tries to delete the not available content
+
+
+6.   it handles the https status during thr creation of rest api.
+
+
+
+
+

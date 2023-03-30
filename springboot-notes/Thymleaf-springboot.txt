@@ -1,0 +1,33 @@
+
+1. Thymeleaf is a modern server-side Java template engine that can be used for building web applications in Spring Boot.
+
+2. Thymleaf syntax is similar to html.
+
+3. thymleaf is poweerful tool for building the dynamic web applications .
+
+4. thymleaf is capable of processig html,xml,javascript,java,css,plain-text.
+
+
+5.  It supports many useful features, such as conditional expressions, loops, and variable expressions, which makes it easy to create complex web     applications with dynamic content.
+
+6.  mostly it is use to generating html view for the web appliaction.
+
+7. main goal of the using thymleaf is to develop such a application which is easy to maintain ,and elegant.
+
+8. it is injected inside the html to generate the dynamic view.
+
+9 .thymleaf can access java code, object , spring bean.
+
+
+
+
+  10.Overall, Thymeleaf is a powerful and flexible template engine that can simplify the process of building dynamic web applications with Spring Boot.
+
+11. thymleaf engine will parse the thymleaf template.
+
+12. thymleaf expression is more powerfull than jsp.
+
+13. <p th:text="${name}">
+
+
+

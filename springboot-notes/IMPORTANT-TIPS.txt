@@ -1,0 +1,15 @@
+1 . IF YOU ARE USING THE @autowired IN ANY CUSTOM CLASS , then firstly the object of autowired class is created then after the object of current     class is created(the class in which you are using autowiring).
+
+
+2. ex. let us suppose we have 2 two custom class a and b you wants the object of a in b then you have to autowired class a in b.
+
+3. jsp is firstly converted into the servlet and whole lifecycle of servlet started.
+
+
+5. abhay12345 neetcode password.
+
+
+6. (Model model) attribute is use to send the data from the controller to view dynamically on calling .
+
+
+7. @modelattribute is use to receive the data from the view page.

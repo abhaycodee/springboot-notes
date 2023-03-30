@@ -1,0 +1,22 @@
+1. loginPage()      to define the custom login page for the user signin.
+
+
+
+
+
+2. loginProcessingUrl().   url to submit the username and password to
+
+
+
+
+
+
+3. defaultSucessUrl().     landing page after the successfull login.
+
+
+
+
+
+
+
+4. failureLogin().      page use after the failure login.

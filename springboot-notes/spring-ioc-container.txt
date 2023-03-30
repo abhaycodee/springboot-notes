@@ -1,0 +1,16 @@
+The Spring IoC (Inversion of Control) container is a fundamental part of the Spring Framework. It is responsible for managing the objects (also known as beans) that make up a Spring application. Here are the basic steps of how the Spring IoC container works:
+
+Configuration: The first step is to define the beans that make up your application. This is typically done using XML configuration files, although it can also be done using Java annotations or a combination of both. In the configuration, you specify the classes of the objects you want to create, as well as any dependencies that they may have.
+
+1.  Instantiation: Once the configuration is in place, the Spring IoC container creates instances of the beans as needed. It does this by calling       the constructor of each bean class or by using a factory method to create the object.
+
+2.    Dependency Injection: The Spring IoC container then injects any required dependencies into the beans. This is done by looking at the          configuration and matching up the dependencies with other beans in the container. Dependencies can be injected either through constructor           arguments, setter methods, or fields.
+
+3.    Lifecycle Management: The Spring IoC container manages the lifecycle of the beans. This includes creating and destroying the beans, as well       as managing any necessary initialization and cleanup. You can add your own initialization and cleanup code by implementing the       InitializingBean and DisposableBean interfaces or by using annotations.
+
+4.    AOP: Finally, the Spring IoC container can apply AOP (Aspect-Oriented Programming) to the beans. This allows you to add cross-cutting        concerns such as logging, security, or transaction management to your application without cluttering your business logic.
+
+    Overall, the Spring IoC container provides a powerful mechanism for managing the objects in your Spring application. By using the container,     you can easily define and manage complex object graphs with ease.
+
+
+

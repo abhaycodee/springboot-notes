@@ -1,0 +1,13 @@
+1. we can add the fragemntaion in thymleaf .
+
+2. thrrough the help of fragmentation we can reuse the code .
+
+2 host are the page which use the fragmentated code .
+
+4. we can insert , replace , include the fragemntation code inside the host page.
+
+5. we can create the fragment code like this th:fragment="fragment1".
+
+6. we can use the fragment code like this th:insert="page-name::fragment-name"
+
+7. we can send the data to fragmented template from the controller class through the handler, using the addattribute() method.
